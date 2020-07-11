@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/static/favicon-16x16.png">
+  <link rel="manifest" href="assets/static/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css">
+  <link rel="stylesheet" href="assets/styles/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/common.min.css">
+  <title>mmlampadari</title>
+</head>
+<body>
+  <div id="modal" class="modal">
+    <div class="modal_dialog">
+      <div class="modal_content">
+        <div class="modal_title">
+          <h2>AREA RISERVATA</h2>
+          <span id="close" class="close"></span>
+        </div>
+        <div class="modal_conteiner">
+          <div class="modal_conteiner_signin">
+            <form class="form">
+              <h3 class="modal_conteiner_title">ACCEDI</h3>
+              <input class="input" type="email" name="email" placeholder="E-mail">
+              <input class="input" type="password" name="password" placeholder="Password">
+              <button class="btn" type="submit" name="button">ACCEDI</button>
+              <a class="forgot_password" href="#">Password dimenticata</a>
+            </form>
+          </div>
+          <div class="modal_conteiner_signup">
+            <form class="form">
+              <h3 class="modal_conteiner_title">REGISTRATI</h3>
+              <input class="input" type="text" name="nome" placeholder="Nome">
+              <input class="input" type="text" name="cognome" placeholder="Cognome">
+              <input class="input" type="email" name="email" placeholder="E-mail">
+              <input class="input" type="text" name="password" placeholder="Password">
+              <label class="label" for="checkbox_data">Acconsento al trattamento dei dati
+                <input id="checkbox_data" class="checkbox" type="checkbox" name="checkbox_data">
+                <span class="checkmark"></span>
+              </label>
+              <label class="label" for="checkbox_news">Mi iscrivo alla Newsletter
+                <input id="checkbox_news" class="checkbox" type="checkbox" name="checkbox_news">
+                <span class="checkmark"></span>
+              </label>
+              <button class="btn" type="submit" name="dosignup">ISCRIVITI</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div id="modal_link" class="header_menu">
+      <a href="">AREA RISERVATA</a>
+      <span class="lock"></span>
+    </div>
+    <nav>
+      <a class="logo" href="/" title="Homepage"></a>
+      <ul class="header_link">
+        <li><a href="/">HOME</a></li>
+        <li class="dropdown">
+          <a class="cursor" href="#">AZIENDA</a>
+          <div class="dropdown_content">
+            <a href="#">STORIA</a>
+            <a href="#">MM DESIGN</a>
+            <a href="#">DESIGNER</a>
+            <a href="#">CERTIFICAZIONI</a>
+          </div>
+        </li>
+        <li><a href="#">COLLEZIONI</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">CONTATTI</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="slider">
+      <div id="my-keen-slider" class="keen-slider">
+        <div class="box_wrapper">
+          <div class="box_center">
+            <h1 class="box_center_title">Lampadari contemporanei</h1>
+            <p class="box_center_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+          </div>
+        </div>
+        <img class="keen-slider__slide" src="assets/images/slider/interer-dizayn-sovremennyy.jpg" alt="interior design moderno">
+        <img class="keen-slider__slide" src="assets/images/slider/interer-komnata-kvartira.jpg" alt="interno camera appartamento">
+        <img class="keen-slider__slide" src="assets/images/slider/stil-zelenyy-komnata.jpg" alt="stile verde room">
+      </div>
+      <div id="dots" class="dots"></div>
+      <div class="aperti_wrapper">
+        <div id="aperti_conteiner" class="aperti_conteiner">
+          <div class="aperti_box">
+            <span id="arrow" class="aperti_arrow"></span>
+          </div>
+        </div>
+        <div id="aperti_content" class="aperti_content">
+          <div class="aperti_content_1 aperti_indent">
+            <h2 class="aperti_title">Stai pensando ad un progetto?</h2>
+            <p class="aperti_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a class="aperti_link" href="#">Approfondisci</a>
+          </div>
+          <div class="aperti_content_2 aperti_indent">
+            <h2 class="aperti_title">Vi aspettiamo alla fiera Euroluce</h2>
+            <p class="aperti_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a class="aperti_link color_black" href="#">Approfondisci</a>
+          </div>
+          <div class="aperti_content_3 aperti_indent">
+            <h2 class="aperti_title">Scopri la nuova collezione</h2>
+            <p class="aperti_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+            <a class="aperti_link" href="#">Approfondisci</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="lampadari_conteiner">
+        <div class="lampadari">
+          <h5 class="lampadari_title">lampadari artigianali</h5>
+          <p class="lampadari_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+        </div>
+        <div class="lampadari">
+          <h5 class="lampadari_title">lampadari artigianali</h5>
+          <p class="lampadari_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+        </div>
+        <div class="lampadari">
+          <h5 class="lampadari_title">45 anni di esperienza</h5>
+          <p class="lampadari_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+        </div>
+        <div class="lampadari">
+          <h5 class="lampadari_title">NEWSLETTER</h5>
+          <div class="newsletter">
+            <form class="form">
+              <input class="input" type="text" name="nome" placeholder="Nome e Cognome">
+              <input class="input" type="email" name="email" placeholder="Email">
+              <label class="label" for="checkbox_news_letter">Acconsento al trattamento dei dati
+                <input id="checkbox_news_letter" class="checkbox" type="checkbox" name="checkbox_news_letter">
+                <span class="checkmark"></span>
+              </label>
+              <button class="btn" type="submit" name="button">ISCRIVITI</button>
+            </form>
+            <div class="social">
+              <a class="social_fb" href="#"></a>
+              <a class="social_inst" href="#"></a>
+              <a class="social_pint" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact_details">
+        <div class="about">
+          <p>MMLAMPADARI srl</p>
+          <p>Via Feltrina 00</p>
+          <p>31111 Pederobba (TV)</p>
+          <p>0423.123456</p>
+          <p>info@mmlampadari.mm</p>
+          <p>P.IVA 04123456789</p>
+        </div>
+        <div class="lingua">
+          <p>ITA</p>
+          <span class="lingua_line"></span>
+          <p>ENG</p>
+          <span class="lingua_line"></span>
+          <p>DEU</p>
+          <span class="lingua_line"></span>
+          <p>PYC</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
+  <script src="assets/scripts/main.min.js"></script>
+</body>
+</html>

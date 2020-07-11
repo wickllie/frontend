@@ -1,0 +1,517 @@
+@import _variables.sass
+@import _fonts.sass
+
+*, :after, :before
+  box-sizing: border-box
+
+body
+  color: $color
+  font-size: 16px
+  font-family: Open-Sans, sans-serif
+  overflow-x: hidden
+  margin: 0
+  padding: 0
+
+ul
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+a
+  color: $link
+  text-decoration: none
+  outline: none !important
+
+input
+  outline: none !important
+
+p
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+/*
+  modal window (popup)
+
+.modal
+  display: none
+
+.modal_block
+  display: block
+
+.body_hidden
+  overflow-y: hidden
+
+.modal_dialog
+  background-color: $popup
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  min-height: 100%
+  overflow: hidden
+  position: fixed
+  top: 0px
+  z-index: 3
+
+.modal_content
+  background-color: $background-color
+  border: 1px solid $border
+  width: 596px
+  height: 361px
+
+.modal_title
+  font-family: Playfair, sans-serif
+  text-align: center
+  margin-top: 14px
+  color: $text
+
+.close
+  background: url("../images/icons/close.png") no-repeat
+  cursor: pointer
+  width: 23px
+  height: 22px
+  float: right
+  position: relative
+  margin: -25px 18px 0 0
+
+.modal_conteiner
+  display: flex
+
+.modal_conteiner_title
+  font-family: Playfair, sans-serif
+  font-size: 18px
+  color: $text
+
+.modal_conteiner_signin
+  margin: 27px 0 0 76px
+  display: flex
+  flex-direction: column
+
+.form
+  display: flex
+  flex-flow: column
+
+.input
+  background-color: $input
+  border: 1px solid $input
+  font-size: 16px
+  height: 31px
+  width: 184px
+  margin-top: 7px
+  padding: 10px
+  &:first-child
+    margin-top: 0px
+
+.btn
+  background-color: $btn
+  border: none
+  color: $link
+  cursor: pointer
+  margin-top: 14px
+  height: 31px
+  width: 184px
+  font-size: 18px
+  transition: all 0.5s ease
+  &:hover
+    transition: all 0.5s ease
+    background-color: $active
+
+.forgot_password
+  margin-top: 12px
+  font-size: 12px
+  transition: all .5s ease
+  &:hover
+    color: $active
+
+.modal_conteiner_signup
+  margin: 27px 0 0 72px
+  display: flex
+  flex-direction: column
+
+/*
+  checkbox
+
+.label
+  align-items: center
+  display: flex
+  cursor: pointer
+  font-size: 10px
+  margin-top: 14px
+  display: block
+  position: relative
+  padding-left: 16px
+  width: 184px
+  cursor: pointer
+  color: $text
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.label input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+.checkmark
+  position: absolute
+  top: 2px
+  left: 0
+  height: 8px
+  width: 8px
+  background-color: $checkbox
+
+.label:hover input ~ .checkmark
+  background-color: $checkbox
+
+.label input:checked ~ .checkmark
+  background-color: $checkmark
+
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+.label input:checked ~ .checkmark:after
+  display: block
+
+.label .checkmark:after
+  left: 3px
+  top: 1px
+  width: 3px
+  height: 6px
+  border: solid $border
+  border-width: 0 2px 2px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+/*
+  checkbox end
+  modal end
+
+/*
+  header
+
+.header
+  background-color: $background-color
+  height: 130px
+  display: flow-root
+  position: fixed
+  z-index: 2
+  width: 100%
+
+.header_menu
+  cursor: pointer
+  float: right
+  margin: 7px 59px 0 0
+  a
+    transition: all .5s ease
+    &:hover
+      color: $active
+
+.lock
+  background: url("../images/icons/lock.png") no-repeat
+  display: inline-block
+  margin-left: 10px
+  width: 9px
+  height: 13px
+
+.logo
+  background: url("../images/logo.png") no-repeat
+  cursor: pointer
+  display: block
+  margin: 24px 0 0 40px
+  width: 283px
+  height: 83px
+
+.header_link
+  display: flex
+  justify-content: flex-end
+  margin: -23px 59px 0 0
+  li
+    margin-right: 27px
+    &:last-child
+      margin-right: 0px
+    a
+      transition: all .5s ease
+      &:hover
+        color: $active
+      &:focus
+        color: $focus
+
+.dropdown
+  padding-bottom: 28px
+
+.cursor
+  cursor: default
+
+.dropdown_content
+  background-color: $background-color
+  display: none
+  flex-direction: column
+  min-width: 149px
+  min-height: 132px
+  margin-top: 28px
+  position: absolute
+  z-index: 1
+  a
+    margin: 8px 16px 0 16px
+    border-bottom: 1px solid $border
+    padding-bottom: 7px
+    &:hover
+      color: $active
+    &:last-child
+      margin-bottom: 16px
+      border: none
+      padding: 0
+
+.dropdown:hover .dropdown_content
+    display: flex
+
+/*
+  header end
+
+/*
+  main
+
+.color_black
+  color: $color_black
+
+.keen-slider
+  align-items: center
+  position: relative
+
+.box_wrapper
+  position: absolute
+  z-index: 1
+  right: 0
+
+.box_center
+  background-color: $box_background
+  padding: 18px 0 19px 28px
+  width: 531px
+  height: auto
+
+.box_center_title
+  color: $box_title
+  font-family: Playfair, sans-serif
+  font-size: 30px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  width: 455px
+
+.box_center_text
+  font-size: 18px
+  font-weight: 400
+  line-height: 24px
+  margin-top: 30px
+  width: 422px
+
+.dots
+  display: flex
+  justify-content: center
+  margin: -53px 0 39px 0
+  position: relative
+
+.dot
+  width: 15px
+  height: 14px
+  background: $dot
+  border: 2px solid $dot_border
+  border-radius: 50%
+  margin: 0 9px
+  padding: 5px
+  cursor: pointer
+
+.dot:focus
+  outline: none
+
+.dot--active
+  background: $active
+
+.aperti_wrapper
+  display: flex
+  justify-content: center
+
+.aperti_conteiner
+  display: flex
+  position: absolute
+  z-index: 1
+  transition: all 0.5s ease
+
+.aperti_box
+  background-color: $aperti_background
+  margin-top: -28px
+  width: 84px
+  height: 28px
+  position: relative
+
+.aperti_arrow
+  background: url("../images/icons/arrow.png") no-repeat
+  cursor: pointer
+  display: block
+  margin: 7px 0 0 22px
+  width: 39px
+  height: 16px
+  transition: all .5s ease
+
+.aperti_arrow_rotate
+  transition: all .5s ease
+  transform: rotate(180deg)
+
+.aperti_content
+  display: flex
+  padding: 0 10px 0 10px
+  position: absolute
+  width: -webkit-fill-available
+  transition: all .5s ease
+  div
+    height: auto
+
+.aperti_move
+  margin-top: -214px
+
+.aperti_indent
+  padding: 18px 16px 8px 16px
+
+.aperti_content_1
+  background-color: $aperti_content_1
+  flex-grow: 1
+
+.aperti_content_2
+  background-color: $aperti_content_2
+  flex-grow: 1
+
+.aperti_content_3
+  background-color: $aperti_content_3
+  color: $text
+  flex-grow: 1
+
+.aperti_title
+  font-family: Playfair, sans-serif
+  font-size: 28px
+  font-weight: 700
+  line-height: 30px
+
+.aperti_text
+  font-size: 16px
+  font-weight: 400
+  line-height: 24.99px
+  margin-top: 14px
+  width: 288px
+
+.aperti_link
+  font-size: 18px
+  font-weight: 400
+  line-height: 24.99px
+  margin: 18px 5px 0 0
+  float: right
+  &:hover
+    text-decoration: underline
+
+.footer
+  background-color: $background-color
+  height: auto
+  position: relative
+
+.lampadari_conteiner
+  display: flex
+  flex-direction: row
+  justify-content: center
+  padding-top: 40px
+
+.lampadari
+  padding-right: 60px
+  &:last-child
+    padding-right: 0
+
+.lampadari_title
+  color: $text
+  font-family: Playfair, sans-serif
+  font-size: 14px
+  font-weight: 700
+  line-height: 23.93px
+  text-transform: uppercase
+  margin-bottom: 26px
+
+.lampadari_text
+  color: $text
+  font-size: 12px
+  font-weight: 300
+  line-height: 17.4px
+  width: 194px
+
+.contact_details
+  padding: 23px 20px 18px 20px
+  display: flex
+
+.about
+  display: flex
+  color: $text
+  font-size: 12px
+  font-weight: 400
+  line-height: 24px
+  width: 703px
+  p
+    margin-left: 15px
+    &:first-child
+      margin-left: 0
+
+.social
+  display: flex
+  bottom: 0
+  position: absolute
+  margin-bottom: 21px
+  a
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+
+.social_fb
+  background: url("../images/social/fb.png") no-repeat
+  cursor: pointer
+  display: block
+  width: 18px
+  height: 18px
+
+.social_inst
+  background: url("../images/social/inst.png") no-repeat
+  cursor: pointer
+  display: block
+  width: 18px
+  height: 18px
+
+.social_pint
+  background: url("../images/social/pint.png") no-repeat
+  cursor: pointer
+  display: block
+  width: 18px
+  height: 18px
+
+.lingua
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $text
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  text-transform: uppercase
+  right: 0
+  position: absolute
+  margin-right: 20px
+  p
+    padding: 0 10px
+
+.lingua_line
+  width: 1px
+  height: 10px
+  border-right: 1px solid
+
+@import _media.sass
