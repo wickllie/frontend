@@ -1,36 +1,145 @@
-/*==========  Desktop First Method  ==========*/
+/* Smartphones (portrait and landscape) */
+@media screen and (min-width: 320px) and (max-width: 480px)
+  .toggle_menu
+    display: block
 
-/* Custom Media Queries */
+  .header
+    height: auto
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+  .logo
+    margin: 24px 0 0 20px
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+  .header_menu
+    margin: 7px 19px 0 0
 
-@media only screen and (max-width : 480px)
-	/**/
+  .header_link
+    display: none
+
+  .dropdown
+    padding: 0
+
+  .dropdown_content
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin-top: 82px
+
+  .modal_conteiner
+    flex-flow: column
+
+  .modal_conteiner_signup
+    margin: 27px 0 0
+
+  .modal_conteiner_title
+    text-align: center
+
+  .modal_content
+    height: 450px
+    overflow: scroll
+
+  .box_wrapper
+    width: 240px
+
+  .box_center
+    padding: 10px 0 10px 20px
+
+  .box_center_title
+    font-size: 14px
+    width: 211px
+
+  .box_center_text
+    font-size: 12px
+    line-height: unset
+    margin-top: 7px
+    width: 211px
+
+  .footer
+    padding-bottom: 40px
+
+  .aperti_content
+    flex-flow: column
+    position: unset
+    z-index: -1
+
+  .lampadari_conteiner
+    align-items: center
+    flex-flow: column
+
+  .lampadari
+    padding: 0 0 26px
+    &:last-child
+      padding: 0
+    text-align: center
+
+  .lampadari_title
+    padding-bottom: 13px
+
+  .social
+    left: 0
+    bottom: 0
+    padding: 0 0 16px 20px
+
+  .contact_details
+    flex-flow: wrap-reverse
+
+  .about
+    flex-flow: wrap
+    justify-content: center
+    p
+      &:first-child
+        margin-left: 15px
+
+  .lingua
+    margin-top: 26px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media screen and (max-width: 320px)
+  /* styles */
 
-/*==========  Mobile First Method  ==========*/
+/* Smartphones (landscape) */
+@media screen and (min-width: 321px)
+  /* styles */
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+/* Tablets, iPads (portrait and landscape) */
+@media screen and (min-width: 768px) and (max-width: 1024px)
+  .aperti_content
+    flex-flow: column
+    position: unset
+    z-index: -1
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+  .footer
+    padding-bottom: 40px
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  .lampadari_conteiner
+    align-items: center
+    flex-flow: wrap
+    padding-top: 40px
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .lampadari
+    padding: 0 30px 26px
+    &:last-child
+      padding: 0
+    text-align: center
+
+  .social
+    left: 0
+    bottom: 0
+    padding: 0 0 16px 20px
+
+  .lingua
+    margin-top: 26px
+
+/* Tablets, iPads (portrait) */
+@media screen and (min-width: 768px)
+  /* styles */
+
+/* Tablets, iPads (landscape) */
+@media screen and (min-width: 1024px)
+  /* styles */
+
+/* Desktops and laptops */
+@media screen and (min-width: 1224px)
+  /* styles */
+
+/* Large screens */
+@media screen and (min-width: 1824px)
+  /* styles */

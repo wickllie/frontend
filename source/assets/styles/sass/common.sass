@@ -58,13 +58,13 @@ h1, h2, h3, h4, h5, h6
 .modal_content
   background-color: $background-color
   border: 1px solid $border
-  width: 596px
-  height: 361px
+  width: auto
+  height: auto
+  padding: 14px 0
 
 .modal_title
   font-family: Playfair, sans-serif
   text-align: center
-  margin-top: 14px
   color: $text
 
 .close
@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6
 
 .modal_conteiner
   display: flex
+  padding: 27px 76px 0
 
 .modal_conteiner_title
   font-family: Playfair, sans-serif
@@ -85,7 +86,6 @@ h1, h2, h3, h4, h5, h6
   color: $text
 
 .modal_conteiner_signin
-  margin: 27px 0 0 76px
   display: flex
   flex-direction: column
 
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6
     color: $active
 
 .modal_conteiner_signup
-  margin: 27px 0 0 72px
+  margin-left: 72px
   display: flex
   flex-direction: column
 
@@ -204,7 +204,6 @@ h1, h2, h3, h4, h5, h6
   position: fixed
   z-index: 2
   width: 100%
-
 .header_menu
   cursor: pointer
   float: right
@@ -220,6 +219,9 @@ h1, h2, h3, h4, h5, h6
   margin-left: 10px
   width: 9px
   height: 13px
+
+.navigation
+  text-align: center
 
 .logo
   background: url("../images/logo.png") no-repeat
@@ -239,10 +241,37 @@ h1, h2, h3, h4, h5, h6
       margin-right: 0px
     a
       transition: all .5s ease
-      &:hover
+      &:hover, &:focus
         color: $active
-      &:focus
-        color: $focus
+
+/*
+  toggle_menu
+
+.toggle_menu
+  display: none
+  padding-bottom: 14px
+  a
+    transition: all .5s ease
+    &:hover, &:focus
+      color: $active
+
+.toggle_link_hidden
+  visibility: hidden
+  transition: all .5s ease
+  opacity: 0
+  margin-top: -119px
+  li
+    margin-top: 7px
+    a
+      border-bottom: 1px solid #fff
+
+.toggle_link_hidden_show
+  visibility: visible
+  opacity: 1
+  margin-top: 0px
+
+/*
+  toggle_menu end
 
 .dropdown
   padding-bottom: 28px
@@ -294,15 +323,12 @@ h1, h2, h3, h4, h5, h6
 .box_center
   background-color: $box_background
   padding: 18px 0 19px 28px
-  width: 531px
-  height: auto
 
 .box_center_title
   color: $box_title
   font-family: Playfair, sans-serif
   font-size: 30px
   font-weight: 700
-  line-height: 24px
   text-transform: uppercase
   width: 455px
 
@@ -335,6 +361,10 @@ h1, h2, h3, h4, h5, h6
 .dot--active
   background: $active
 
+/* main end
+
+/* footer
+
 .aperti_wrapper
   display: flex
   justify-content: center
@@ -365,12 +395,17 @@ h1, h2, h3, h4, h5, h6
   transition: all .5s ease
   transform: rotate(180deg)
 
+.aperti_arrow_rotate_phone
+  transition: all .5s ease
+  transform: rotate(0deg)
+
 .aperti_content
   display: flex
   padding: 0 10px 0 10px
   position: absolute
   width: -webkit-fill-available
   transition: all .5s ease
+  z-index: 1
   div
     height: auto
 
@@ -419,6 +454,8 @@ h1, h2, h3, h4, h5, h6
   background-color: $background-color
   height: auto
   position: relative
+  padding-bottom: 19px
+  z-index: 2
 
 .lampadari_conteiner
   display: flex
@@ -438,7 +475,7 @@ h1, h2, h3, h4, h5, h6
   font-weight: 700
   line-height: 23.93px
   text-transform: uppercase
-  margin-bottom: 26px
+  padding-bottom: 26px
 
 .lampadari_text
   color: $text
@@ -448,7 +485,7 @@ h1, h2, h3, h4, h5, h6
   width: 194px
 
 .contact_details
-  padding: 23px 20px 18px 20px
+  padding: 23px 20px 0 20px
   display: flex
 
 .about
@@ -457,7 +494,6 @@ h1, h2, h3, h4, h5, h6
   font-size: 12px
   font-weight: 400
   line-height: 24px
-  width: 703px
   p
     margin-left: 15px
     &:first-child
@@ -465,9 +501,8 @@ h1, h2, h3, h4, h5, h6
 
 .social
   display: flex
-  bottom: 0
   position: absolute
-  margin-bottom: 21px
+  padding-top: 23px
   a
     margin-right: 10px
     &:last-child
@@ -505,13 +540,17 @@ h1, h2, h3, h4, h5, h6
   text-transform: uppercase
   right: 0
   position: absolute
-  margin-right: 20px
+  padding-right: 20px
   p
     padding: 0 10px
+    &:last-child
+      padding: 0 0 0 10px
 
 .lingua_line
   width: 1px
   height: 10px
   border-right: 1px solid
+
+/* footer end
 
 @import _media.sass
